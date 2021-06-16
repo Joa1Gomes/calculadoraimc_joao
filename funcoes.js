@@ -14,7 +14,7 @@ function operacao(){
      if (imc < 18.5){
         estado = "Peso Baixo";
     }else if(imc < 24.9){
-        estado = "Peso saudável";
+        estado = "Peso saudavel";
     }else if(imc < 29.99){
         estado = "Sobrepeso";
     }else if(imc < 34.99){    
