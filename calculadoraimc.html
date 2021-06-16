@@ -16,18 +16,31 @@
         </tr>
         <tr>
             <td><br>Altura
-            <td><input type='number' name="Altura" value="" placeholder="Digite sua altura:" id='altura'>
+            <td><input type='number' name="Altura" value="" placeholder="Digite sua altura (m):" id='altura'>
         </tr>
         <tr>
             <td><br>Peso
-            <td><input type='number' name="peso" value="" placeholder="Digite seu peso:" id='peso'>
+            <td><input type='number' name="peso" value="" placeholder="Digite seu peso (kg):" id='peso'>
         </tr>
         <tr>
             <td colspan='2' align='right'><button onclick='operacao()'>Calcular</button>
         </tr>
     </div>
 </div>   
-<div style="text-align:right" class="resultado" id="ficha">
+<div class="resultado" id="ficha">
+    <div class=fichinha>
+        <h1>Ficha Tecnica</h1>
+        <h2>Nome do Paciente: </h2>
+        <p id="exibirNome"></p>
+        <h3>Idade do Paciente: </h3>
+        <p id="exibirIdade"></p>
+        <h4>Altura do Paciente: </h4>
+        <p id="exibirAltura"></p>
+        <h5>Peso do Paciente: </h5>
+        <p id="exibirPeso"></p>
+        <h6>Estado do Paciente: </h6>
+        <p id="exibirEstado"></p>
+    </div>
 </div>
 
 <table>
@@ -37,31 +50,85 @@
 
 <style>
     .caixa{
-        background-color:#696969;
+        background-color:#abdadb;
         width: 300px;
-        height: 350px;
+        height: 550px;
         border-radius: 7px;
         margin: 25px;
+        position: fixed;
+        top: 25px;
+        left: 25px;
     }    
     .conteudo{
         background-color: #FFFFFF;
         width: 250px;
         margin: 8px;
-        height:250px;
+        height:460px;
         border-radius: 7px;
         line-height: 30px;
         padding-top: 30px;
         margin-top: 30px;
         position: absolute;               
         margin-left: 20px;
+        float: left;
     }
     .resultado{
-    background-color: #E44D26;
-    width: 300px;
-    height: 300px;
-    float: right;
-    margin-top: 20px;
-    border-radius: 7px;
-    position: relative;
+        background-color: #abdadb;
+        width: 300px;
+        height: 550px;
+        float: right;
+        margin-top: 25px;
+        border-radius: 7px;
+        position: fixed;
+        left: 375px;
+        top: 25px;
+    }
+    .fichinha{
+        background-color: #FFFFFF;
+        width: 250px;
+        margin: 8px;
+        height:460px;
+        border-radius: 7px;
+        line-height: 10px;
+        padding-top: 30px;
+        margin-top: 30px;
+        position: absolute;               
+        margin-left: 20px;
+        float: left;
+        text-align: left;
+        text-indent: 5px;
+        font-size: large;
+    }
+    h1{
+        font-size: large;
+        text-align: center;
+        top: 5px;
+        text-decoration: underline;
+        line-height: 10px;
+    }
+    h2{
+        font-size:20px;
+        text-decoration: underline;
+        line-height: 10px;
+    }
+    h3{
+        font-size:20px;
+        text-decoration: underline;
+        line-height: 10px;
+    }
+    h4{
+        font-size:20px;
+        text-decoration: underline;
+        line-height: 10px;
+    }
+    h5{
+        font-size:20px;
+        text-decoration: underline;
+        line-height: 10px;
+    }
+    h6{
+        font-size:20px;
+        text-decoration: underline;
+        line-height: 10px;
     }
 </style>
