@@ -6,21 +6,26 @@
 <body>
 <div style="text-align:center" class="caixa">
     <div class="conteudo">
+        Calculadora IMC<BR>
         <tr>
-            <td>Nome
+            <td>Nome:
             <td><input type='text' name="Nome" value="" placeholder="Digite seu nome:" id='nome'>
+                <hr>
         </tr>
         <tr>
-            <td><br>Idade
+            <td><br>Idade:
             <td><input type='number' name="Idade" value="" placeholder="Digite sua idade:" id='idade'>
+                <hr>
         </tr>
         <tr>
-            <td><br>Altura
+            <td><br>Altura:
             <td><input type='number' name="Altura" value="" placeholder="Digite sua altura (m):" id='altura'>
+                <hr>
         </tr>
         <tr>
-            <td><br>Peso
+            <td><br>Peso:
             <td><input type='number' name="peso" value="" placeholder="Digite seu peso (kg):" id='peso'>
+                <hr>
         </tr>
         <tr>
             <td colspan='2' align='right'><button onclick='operacao()'>Calcular</button>
@@ -32,14 +37,19 @@
         <h1>Ficha Tecnica</h1>
         <h2>Nome do Paciente: </h2>
         <p id="exibirNome"></p>
+        <hr>
         <h3>Idade do Paciente: </h3>
         <p id="exibirIdade"></p>
-        <h4>Altura do Paciente: </h4>
+        <hr>
+        <h4>Altura do Paciente (m): </h4>
         <p id="exibirAltura"></p>
-        <h5>Peso do Paciente: </h5>
+        <hr>
+        <h5>Peso do Paciente (kg): </h5>
         <p id="exibirPeso"></p>
+        <hr>
         <h6>Estado do Paciente: </h6>
         <p id="exibirEstado"></p>
+        
     </div>
 </div>
 
@@ -61,9 +71,9 @@
     }    
     .conteudo{
         background-color: #FFFFFF;
-        width: 250px;
+        width: 260px;
         margin: 8px;
-        height:460px;
+        height:470px;
         border-radius: 7px;
         line-height: 30px;
         padding-top: 30px;
@@ -85,9 +95,9 @@
     }
     .fichinha{
         background-color: #FFFFFF;
-        width: 250px;
+        width: 260px;
         margin: 8px;
-        height:460px;
+        height:470px;
         border-radius: 7px;
         line-height: 10px;
         padding-top: 30px;
@@ -107,27 +117,27 @@
         line-height: 10px;
     }
     h2{
-        font-size:20px;
+        font-size:16px;
         text-decoration: underline;
         line-height: 10px;
     }
     h3{
-        font-size:20px;
+        font-size:16px;
         text-decoration: underline;
         line-height: 10px;
     }
     h4{
-        font-size:20px;
+        font-size:16px;
         text-decoration: underline;
         line-height: 10px;
     }
     h5{
-        font-size:20px;
+        font-size:16px;
         text-decoration: underline;
         line-height: 10px;
     }
     h6{
-        font-size:20px;
+        font-size:16px;
         text-decoration: underline;
         line-height: 10px;
     }
